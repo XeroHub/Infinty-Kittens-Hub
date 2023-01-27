@@ -1,0 +1,124 @@
+local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/XeroHub/Infinty-Kittens-Hub/main/Digital%20Hub"))()
+local JG = false
+local GUI = Mercury:Create{
+    Name = "Early Access",
+    Size = UDim2.fromOffset(550, 350),
+    Theme = Mercury.Themes.Dark,
+}
+
+GUI:Notification{
+	Title = "Infintys Kittens Hub Early Access Free",
+	Text = "Done Loading Fun Fact you might be running this from Rxinware xd",
+	Duration = 3,
+	Callback = function() end
+}
+
+GUI:Credit{
+	Name = "Kitten",
+	Description = "Lit Made the Script Hub",
+	V3rm = "bandilovecat1484",
+	Discord = "Kitten#1161"
+}
+
+GUI:Credit{
+	Name = "Rxin",
+	Description = "Allowed me to Take some scripts",
+	V3rm = "Idk",
+	Discord = "Rxin#0363"
+}
+
+local FES = GUI:Tab{
+	Name = "FE Scripts",
+	Icon = "rbxassetid://8569322835"
+}
+local CHAR = GUI:Tab{
+	Name = "Character Functions",
+	Icon = "rbxassetid://8569322835"
+}
+local FEGS = GUI:Tab{
+	Name = "FE Gay Scripts",
+	Icon = "rbxassetid://8569322835"
+}
+local SING = GUI:Tab{
+	Name = "Cofig",
+	Icon = "rbxassetid://8569322835"
+}
+
+FES:Button{
+    Name = "FE Shooter [Rxin]",
+	Description = nil,
+	Callback = function()
+        GUI:Notification{
+	        Title = "Infintys Kittens Hub",
+	        Text = "Hey Remember I helped to make this script",
+	        Duration = 3,
+	        Callback = function() end
+        }
+        local url = "https://raw.githubusercontent.com/XeroHub/Great-repository-names-are-short-and-memorable.-Need-inspiration-How-about-shiny-fortnight-Descri/main/r%20create%20a%20new%20repository%20on%20the%20command%20line%20echo%20%22%23%20Great-repository-names-are-short-and-memorable.-Need-inspiration-How-about-shiny-fortnight-Descri%22%20%3E%3E%20README.md%20git%20init%20git%20add%20README.md%20git%20commit%20-m%20%22first%20commit%22%20git%20branch%20-M%20main"
+        loadstring(game:HttpGet(url))()
+    end
+}
+FES:Button{
+    Name = "FE Car [Kitten]",
+	Description = nil,
+	Callback = function()
+        local url = "https://raw.githubusercontent.com/HeyGyt/carman/main/main"
+        loadstring(game:HttpGet(url))()
+    end
+}
+FES:Button{
+    Name = "FE Grab Knife v4",
+	Description = nil,
+	Callback = function()
+        local url = "https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/grab%20knife%20v4%20fe.lua"
+        loadstring(game:HttpGet(url))()
+    end
+}
+FEGS:Button{
+    Name = "Requires Hat For PP",
+	Description = nil,
+	Callback = function()
+        GUI:Notification{
+	        Title = "Infintys Kittens Hub",
+	        Text = "Copyed to Clipboard [download]",
+	        Duration = 3,
+	        Callback = function() end
+        }
+        setclipboard("https://www.mediafire.com/file/1e11tullbihl3d6/Untitled-1.lua/file")
+    end
+}
+FEGS:Button{
+    Name = "FE PP",
+	Description = nil,
+	Callback = function()
+        local url = "https://raw.githubusercontent.com/XeroHub/Infinty-Kittens-Hub/main/Balls"
+        loadstring(game:HttpGet(url))()
+    end
+}
+
+FES:Textbox{
+	Name = "TP To player Smoothly",
+	Callback = function(text)
+        local Person = game.Players:FindFirstChild(text)
+        print(Person.UserId)
+        local tweenService = game:GetService("TweenService")
+
+        local changes = {
+	        CFrame = Person.Character.HumanoidRootPart.CFrame
+        }
+
+        local tweenInfo = TweenInfo.new(
+	        5,									-- Time taken for a full animation
+	        Enum.EasingStyle.Cubic,			-- Animation Style
+	        Enum.EasingDirection.Out,			-- Animation Type
+	        0,									-- Number of repeats (-1 is infinite)
+	        false,								-- Reverse? 
+    	    0									-- Delay between animations
+        )
+
+        local tween = tweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, tweenInfo, changes)
+        tween:Play()
+
+    end
+}
+
